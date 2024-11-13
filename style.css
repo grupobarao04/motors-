@@ -175,17 +175,17 @@ button:hover {
     opacity: 0.9;
 }
 
-.carousel-img-1{
+.carousel-img-1 img{
     height: 100px;
     width: 100px;
 }
 
-.carousel-img-2{
+.carousel-img-2 img{
     height: 100px;
     width: 100px;
 }
 
-.carousel-img-3{
+.carousel-img-3 img{
     height: 100px;
     width: 100px;
 }
