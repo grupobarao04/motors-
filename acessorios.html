@@ -2,111 +2,118 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="navbar">
+  <nav class="navbar">
 
-        <div class="container">
-            <div class="col-1">
-                <a class="navbar-brand" href="index.html">
-                    <img src="https://via.placeholder.com/250" alt="" width="30" height="24">
-                </a>
-            </div>
-            <div class="col-11">
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="acessorios.html">Acessorios</a></li>
-                    <li>
-                        <a href="carrinho.html">Carrinho</a>
-                        <span id="quantidadeCarrinho">0</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-    </nav>
-
-
-    <!-- Barra de Pesquisa -->
-    <div class="search-bar">
-        <input type="text" id="searchInput" class="form-control" placeholder="Pesquisar produtos..." oninput="filtrarProdutos()">
-    </div>
-
-    <!-- Galeria de Produtos -->
-    <div class="container" id="produtosContainer">
-        <div class="produto" data-nome="Acessorio 1">
-            <img src="https://image.made-in-china.com/318f0j00mQqUVYWgshor/Motorcycle-330mm-Hydraulic-Damping-Shock-Absorber-Rear-Suspension-Shock-Absorber-For-Honda-Yamaha-mp4.webp" alt="Produto 1">
-            <h2> amortecedor esportivo</h2>
-            <p>Preço: R$ 409,59 </p>
-            <p id="estoque-produto-1">Estoque: 5</p>
-            <button id="btn-produto-1" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 1', 50, 1)">Adicionar ao Carrinho</button>
-        </div>
-        <div class="produto" data-nome="Acessorio 2">
-            <img src="https://cdn.awsli.com.br/2500x2500/475/475763/produto/164153227/1c7b7e0807.jpg" alt="Produto 2">
-            <h2>farol esportivo</h2>
-            <p>Preço: R$ 315.98</p>
-            <p id="estoque-produto-2">Estoque: 39</p>
-            <button id="btn-produto-2" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 2', 100, 2)">Adicionar ao Carrinho</button>
-        </div>
-        <div class="produto" data-nome="Produto 3">
-            <img src="https://http2.mlstatic.com/D_NQ_NP_690302-MLB76089411966_052024-O.we" alt="Produto 3">
-            <h2>paralama personalizado</h2>
-            <p>Preço: R$ 72,50</p>
-            <p id="estoque-produto-3">Estoque: 146</p>
-            <button id="btn-produto-3" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 3', 150, 3)">Adicionar ao Carrinho</button>
-        </div>
-
-    </div>
-    
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-          <div class="carousel-item active">
-              <img src="https://ovicio.com.br/wp-content/uploads/2024/10/20241009-novo-cartaz-de-venom-3.webp" class="d-block w-50 mx-auto" alt="...">
-          </div>
-          <div class="carousel-item">
-              <img src="https://cultura.uol.com.br/upload/tvcultura/entretenimento/20240730195143_deadpool-wolverine.jpg" class="d-block w-50 mx-auto" alt="...">
-          </div>
-          <div class="carousel-item">
-              <img src="https://s2-oglobo.glbimg.com/qJ1LmgvKs3NJmcZfX5QiHaWpR7w=/0x0:1280x720/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2024/a/6/mD5mQFSgCNXgW5dEePwA/ame-iphone15-tudosobre.png" class="d-block w-50 mx-auto" alt="...">
-          </div>
+    <div class="container">
+      <div class="col-1">
+        <a class="navbar-brand" href="index.html">
+          <img src="https://via.placeholder.com/250" alt="" width="30" height="24">
+        </a>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-      </button>
+      <div class="col-11">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="acessorios.html">Acessorios</a></li>
+          <li>
+            <a href="carrinho.html">Carrinho</a>
+            <span id="quantidadeCarrinho">0</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+
+  <!-- Barra de Pesquisa -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" class="form-control" placeholder="Pesquisar produtos..."
+      oninput="filtrarProdutos()">
   </div>
-  
 
-    <div class="card text-center bottom-0 start-50 translate-middle-x w-100">
-        <div class="card-header">
-          Featured
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        </div>
-      </div>
+  <!-- Galeria de Produtos -->
+  <div class="container" id="produtosContainer">
+    <div class="produto" data-nome="Acessorio 1">
+      <img
+        src="https://image.made-in-china.com/318f0j00mQqUVYWgshor/Motorcycle-330mm-Hydraulic-Damping-Shock-Absorber-Rear-Suspension-Shock-Absorber-For-Honda-Yamaha-mp4.webp"
+        alt="Produto 1">
+      <h2> amortecedor esportivo</h2>
+      <p>Preço: R$ 409,59 </p>
+      <p id="estoque-produto-1">Estoque: 5</p>
+      <button id="btn-produto-1" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 1', 50, 1)">Adicionar ao
+        Carrinho</button>
+    </div>
+    <div class="produto" data-nome="Acessorio 2">
+      <img src="https://cdn.awsli.com.br/2500x2500/475/475763/produto/164153227/1c7b7e0807.jpg" alt="Produto 2">
+      <h2>farol esportivo</h2>
+      <p>Preço: R$ 315.98</p>
+      <p id="estoque-produto-2">Estoque: 39</p>
+      <button id="btn-produto-2" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 2', 100, 2)">Adicionar ao
+        Carrinho</button>
+    </div>
+    <div class="produto" data-nome="Produto 3">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_690302-MLB76089411966_052024-O.we" alt="Produto 3">
+      <h2>paralama personalizado</h2>
+      <p>Preço: R$ 72,50</p>
+      <p id="estoque-produto-3">Estoque: 146</p>
+      <button id="btn-produto-3" class="btn btn-primary" onclick="adicionarAoCarrinho('Produto 3', 150, 3)">Adicionar ao
+        Carrinho</button>
+    </div>
 
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+  </div>
+
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://ovicio.com.br/wp-content/uploads/2024/10/20241009-novo-cartaz-de-venom-3.webp" class="d-block w-100 h-auto" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://cultura.uol.com.br/upload/tvcultura/entretenimento/20240730195143_deadpool-wolverine.jpg" class="d-block w-100 h-auto" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://s2-oglobo.glbimg.com/qJ1LmgvKs3NJmcZfX5QiHaWpR7w=/0x0:1280x720/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2024/a/6/mD5mQFSgCNXgW5dEePwA/ame-iphone15-tudosobre.png" class="d-block w-100 h-auto" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+
+  <div class="card text-center bottom-0 start-50 translate-middle-x w-100">
+    <div class="card-header">
+      Featured
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 
 
 </body>
